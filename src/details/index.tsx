@@ -1,5 +1,5 @@
 import { Container, PokemonStyle } from "./style"
-import PokemonEntity from "../home/entities/pokemon-entity"
+import PokemonEntity from "../pokemon-list/model/pokemon-entity"
 import { pokemonLocal } from "../utils/const"
 import { getPokemonColorByType } from "../utils/pokemon-colors-util"
 import { HpText, Details, LeftAlign, CenterAlign, RightAlign } from "./style"
