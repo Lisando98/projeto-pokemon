@@ -1,6 +1,7 @@
-import PokemonComponent from "../../pokemon/view/pokemon-component";
+
 import React from "react";
 import { Container, PokemonList } from "./style";
+import PokemonController from "../../pokemon/controller/pokemon-controller";
 
 interface Props{
     pokemonsPromises: any [];
@@ -21,12 +22,11 @@ export default class PokemonListPage extends React.Component <Props> {
                         {
                             pokemons.map(pokemon => {
                                 return (
-                                    <PokemonComponent promissed_pokemon={pokemon}>     
+                                    <PokemonController pokemonPromise={pokemon} />     
                                                             
-                                    </PokemonComponent>
                                 )
                             })
-                        }
+                        }/
                         
                     </PokemonList>
                 </div>
